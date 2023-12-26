@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href=" ">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+body{
+    background-color: aquamarine;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 2px  rgba(0,0,0,0.6);
+    font-size: 8vmin;
+    color: red;
+    background-color: rgb(255, 246, 167);
+}
+#reset{
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 2px 2px  rgba(255, 255, 255, 0.9) ;
+
+}
+#newg{
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 2px 2px  rgba(255, 255, 255, 0.9) ;
+}
+#msg{
+    color: rgb(181, 171, 90) ;
+    font-size: 8vmin;
+}
+.msgcontainer{
+height: 100vmin;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap : 4rem;
+}
+.hide{
+    display: none;
+}
+.member{
+    height: 10vmin;
+    width: 18vmin;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 2px  rgba(0,0,0,0.6);
+    font-size: 3vmin;
+    font-weight: bold;
+   
+    background-color: rgb(255, 246, 167);
+}
+</style>
+<body>
+    <div class="msgcontainer hide">
+        <p id="msg">Winner</p>
+        <button id="newg">New Game</button>
+    </div>
+    <main>
+        <h1>Tic Tae Toe</h1>
+        <button class="member">Player 1 : O</button>
+        <button class="member">Player 2 : X</button>
+       <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+       </div>
+       <button id="reset">Reset</button>
+    </main>
+    <script src="first.js">
+
+    </script>
+</body>
+</html>
